@@ -3,13 +3,16 @@
 Step to run
 
 ```
-// 1. Testing
+// Testing
 $mvn clean test
 
-// 2. Packaging JAR file + Create image
+// Run with spring boot
+$mvn spring-boot:run
+
+// Packaging JAR file + Create image
 $mvn clean package docker:build
 
-// 3. Start service with Docker compose
+// Start service with Docker compose
 $docker-compose -f docker/docker-compose.yml down
 ```
 
