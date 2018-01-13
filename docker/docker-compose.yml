@@ -1,0 +1,6 @@
+version: '3.1'
+services:
+  simpleservice:
+      image: hello-service:1.0
+      ports:
+        - "8090:8080"
