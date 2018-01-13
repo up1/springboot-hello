@@ -3,9 +3,15 @@
 Step to run
 
 ```
-// 1. Compile + Build + JAR file + Create image
+// 1. Testing
+$mvn clean test
+
+// 2. Packaging JAR file + Create image
 $mvn clean package docker:build
 
-//2. Start service with Docker compose
+// 3. Start service with Docker compose
 $docker-compose -f docker/docker-compose.yml down
 ```
+
+### References
+* [Spotify Docker Plugin](https://github.com/spotify/docker-maven-plugin)
